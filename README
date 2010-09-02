@@ -1,1 +1,4 @@
 Change shell on OS X: chsh -s /bin/zsh brissmyr
+
+Colorize diff output by putting colordiff.pl in your ~/bin. Download from
+http://colordiff.sourceforge.net/
