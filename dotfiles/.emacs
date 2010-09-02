@@ -1,5 +1,5 @@
 ; Place all addons here
-(add-to-list 'load-path "/home/johbri01/.emacs.d/addons/")
+(add-to-list 'load-path "/Users/brissmyr/.emacs.d/addons/")
 
 (desktop-save-mode 1)
 (require 'midnight)
@@ -55,7 +55,7 @@
 
 (add-hook 'post-command-hook 'djcb-set-cursor-according-to-mode)
 
-(require 'xcscope)
+;(require 'xcscope)
 
 (define-key global-map [(control f3)]  'cscope-set-initial-directory)
 (define-key global-map [(control f4)]  'cscope-unset-initial-directory)
@@ -69,12 +69,6 @@
 (define-key global-map [(control f12)] 'cscope-prev-file)
 (define-key global-map [(meta f9)]  'cscope-display-buffer)
 (define-key global-map [(meta f10)] 'cscope-display-buffer-toggle)
-
-
-;can autolearn from your typing
-;http://klibb.com/cgi-bin/wiki.pl/Emacs_Blog_2007-01-20
-;(setq load-path (cons "/home/johbri01/.emacs.d/addons/predictive" load-path))
-;(autoload 'predictive-mode "predictive" "predictive" t)
 
 (add-to-list 'load-path
               "~/.emacs.d/addons/yasnippet-0.6.1c")
@@ -534,4 +528,3 @@
 ;;(set-default-font "-misc-*-*-*-*-*-12-*-*-*-*-*-*-*")
 ;(set-default-font "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-1")
 ;(set-default-font "-xos4-terminus-medium-r-normal-*-*-120-*-*-c-*-paratype-pt154")
-
